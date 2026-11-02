@@ -398,7 +398,7 @@ export default function Home() {
           </div>
           <h1 className="text-3xl font-black tracking-tight">Directorio Aplicable Proyectos AGPE y AGGE</h1>
           <p className={`text-sm mt-1 ${darkMode ? 'text-slate-400' : 'text-slate-600'}`}>
-            Compendio de resoluciones UPME, CREG, MME y XM con sincronización en la nube (Supabase).
+            Compendio de resoluciones UPME, CREG, MME y XM.
           </p>
         </div>
 
@@ -536,7 +536,7 @@ export default function Home() {
             </h3>
             
             {cargando ? (
-              <p className="text-xs text-amber-400 p-6 text-center animate-pulse">Conectando con Supabase...</p>
+              <p className="text-xs text-amber-400 p-6 text-center animate-pulse">Conectando...</p>
             ) : (
               <div className="space-y-2.5 max-h-[50vh] overflow-y-auto pr-1">
                 {normasFiltradas.length === 0 ? (
@@ -843,7 +843,7 @@ export default function Home() {
 
             <form onSubmit={handleLogin} className="space-y-3">
               <div>
-                <label className="block text-xs font-bold mb-1">Correo Electrónico (Supabase)</label>
+                <label className="block text-xs font-bold mb-1">Correo Electrónico </label>
                 <input
                   type="email"
                   required
